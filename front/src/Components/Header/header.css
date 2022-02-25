@@ -1,0 +1,15 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.headerIcon,.headerMenu{
+    flex: 1;
+}
+.headerSearch{
+    flex: 2;
+}
+.headerSearch form{
+    display: inline;
+}
