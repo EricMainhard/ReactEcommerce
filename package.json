@@ -1,22 +1,17 @@
 {
-  "name": "reactecom",
+  "name": "ecommercereact",
+  "type": "module",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "back/app.js",
   "scripts": {
-    "start": "node"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/EricMainhard/ReactEcom.git"
+    "start": "nodemon"
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/EricMainhard/ReactEcom/issues"
-  },
-  "homepage": "https://github.com/EricMainhard/ReactEcom#readme",
   "dependencies": {
-    "express": "^4.17.3"
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "nodemon": "^2.0.15"
   }
 }

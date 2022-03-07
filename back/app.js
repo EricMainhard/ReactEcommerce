@@ -1,10 +1,18 @@
-const express = require('express');
-const { env } = require('process');
+import express from 'express';
+import { env } from 'process';
+import { data } from './data.js';
+import cors from 'cors';
+
 const app = express();
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 5000;
 
-app.get('/',(req,res)=>{
+app.use(cors());
+
+app.get('/api/products', (req,res) => {
+    res.send(data.products);
+})
+app.get('/', (req,res) => {
     res.send('Server is ready');
 })
 app.listen(port, ()=>{
